@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Weather Here</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li style="display: inline" class="current">
+          <a href="index.html">Check-In</a>
+        </li>
+        <span>||</span>
+        <li style="display: inline">
+          <a href="logs/index.html">View Check-Ins</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>The Weather Here</h1>
+    <p>
+      The weather here at <span id="lat"></span>&deg;,
+      <span id="lon"></span>&deg; is <span id="stat"></span> with Temperature of
+      <span id="temp"></span>&deg;C. The concentration of particulate matter
+      (<span id="aq_param"></span>) is <span id="aq_value"></span>
+      <span id="aq_units"></span> last read on <span id="aq_date"></span>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
